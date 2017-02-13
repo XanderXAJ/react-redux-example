@@ -10,3 +10,9 @@ Created following the guide by Andrew H Farmer: [Build Your Own Starter][byos].
 ```bash
 npm install
 ```
+
+# Compilation
+
+```bash
+npm compile
+```
