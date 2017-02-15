@@ -1,4 +1,4 @@
-import { counter } from '../counter';
+import counter from '../counter';
 
 test('increments with INCREMENT action', () => {
   expect( counter(0, {type: 'INCREMENT'}) ).toEqual(1);

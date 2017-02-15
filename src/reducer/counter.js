@@ -9,4 +9,4 @@ const counter = (state = 0, action) => {
   }
 }
 
-export { counter };
+export default counter;
