@@ -1,26 +1,18 @@
 import React from 'react';
 
 /**
- * A counter button: tap the button to increase the count.
+ * A counter button: tap the buttons to increase or decrease the count.
  */
-class Counter extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      count: 0
-    };
-  }
+const Counter = ({
+  value,
+  onIncrement,
+  onDecrement
+}) => (
+  <div>
+    <h1>{value}</h1>
+    <button onClick={onIncrement}>+</button>
+    <button onClick={onDecrement}>-</button>
+  </div>
+);
 
-  render() {
-    return (
-      <button
-        onClick={
-          () => this.setState({count: this.state.count + 1})
-        }
-      >
-        Count: {this.state.count}
-      </button>
-    );
-  }
-}
 export default Counter;
