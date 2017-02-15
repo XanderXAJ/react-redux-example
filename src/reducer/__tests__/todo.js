@@ -1,4 +1,4 @@
-import todo from '../todo';
+import todos from '../todo';
 
 test('adds todo', () => {
   const stateBefore = [];
@@ -16,7 +16,7 @@ test('adds todo', () => {
   ];
 
   expect(
-    todo(stateBefore, action)
+    todos(stateBefore, action)
   ).toEqual(stateAfter);
 });
 
@@ -51,6 +51,6 @@ test('adds todo', () => {
   ];
 
   expect(
-    todo(stateBefore, action)
+    todos(stateBefore, action)
   ).toEqual(stateAfter);
 });
