@@ -1,7 +1,7 @@
 {
-  "name": "build-your-own-starter",
+  "name": "react-redux-experiment",
   "version": "1.0.0",
-  "description": "Build Your Own Starter ======================",
+  "description": "React Redux Experiment",
   "main": "index.js",
   "scripts": {
     "compile": "webpack",
