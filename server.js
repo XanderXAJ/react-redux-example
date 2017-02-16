@@ -17,8 +17,7 @@ app.use(webpackDevMiddleware(compiler, {
   publicPath: '/',
   stats: {
     colors: true
-  },
-  historyApiFallback: true
+  }
 }));
 
 const server = app.listen(3000, function() {
