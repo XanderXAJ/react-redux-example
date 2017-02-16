@@ -1,5 +1,5 @@
 import { applyMiddleware, createStore } from 'redux';
-import reducer from './reducer/counter';
+import todoApp from './reducer/todo';
 
 // Use redux-immutable-state-invariant to ensure that state mutations are not occurring,
 // as Redux forbids mutations.  Only use it during development though;
@@ -9,7 +9,7 @@ const middleware = process.env.NODE_ENV === 'production' ?
     [require('redux-immutable-state-invariant')()];
 
 const Store = createStore(
-  reducer,
+  todoApp,
   applyMiddleware(...middleware)
 );
 

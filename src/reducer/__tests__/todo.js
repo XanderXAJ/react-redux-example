@@ -1,4 +1,16 @@
-import todos from '../todo';
+import todoApp from '../todo';
+import { todos } from '../todo';
+
+test('initial app state', () => {
+  const expectedState = {
+    todos: [],
+    visibilityFilter: 'SHOW_ALL'
+  };
+
+  expect(
+    todoApp(undefined, {})
+  ).toEqual(expectedState);
+});
 
 test('adds todo', () => {
   const stateBefore = [];
