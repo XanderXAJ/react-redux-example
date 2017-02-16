@@ -18,7 +18,7 @@ const render = () => {
         })
       }
     />,
-    document.getElementById('mount')
+  document.getElementById('root')
   );
 };
 
