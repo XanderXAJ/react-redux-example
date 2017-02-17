@@ -7,7 +7,8 @@ module.exports = {
   ],
   output: {
     path: path.resolve(__dirname, 'www'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    sourceMapFilename: 'bundle.map'
   },
   module: {
     rules: [
@@ -19,5 +20,6 @@ module.exports = {
         ]
       }
     ]
-  }
+  },
+  devtool: 'cheap-eval-source-map'
 };
