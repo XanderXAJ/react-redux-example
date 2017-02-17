@@ -1,10 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Store from './Store';
+import TodoApp from './component/TodoApp';
 
 const render = () => {
   ReactDOM.render(
-    <div />,
+    <TodoApp
+      todos={Store.getState().todos}
+    />,
     document.getElementById('root')
   );
 };
