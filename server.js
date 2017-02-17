@@ -12,7 +12,6 @@ app.use(express.static(path.join(__dirname, 'www')));
 // Builds and serves files in memory
 // NOTE: If a file exists on disk, the disk version will always be served -- take note after compiling
 app.use(webpackDevMiddleware(compiler, {
-  hot: true,
   filename: 'bundle.js',
   publicPath: '/',
   stats: {
