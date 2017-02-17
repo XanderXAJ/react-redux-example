@@ -1,8 +1,8 @@
-import { Component } from 'react';
+import React from 'react';
 import Store from '../Store';
 
 let nextTodoId = 0;
-class TodoApp extends Component {
+class TodoApp extends React.Component {
   render() {
     return (
       <div>
