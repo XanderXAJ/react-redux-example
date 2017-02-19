@@ -1,5 +1,5 @@
 import React from 'react';
-import Store from '../Store';
+import Store from '../reducer/Store';
 
 let nextTodoId = 0;
 class TodoApp extends React.Component {

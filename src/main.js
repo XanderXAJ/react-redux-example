@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Store from './Store';
+import Store from './reducer/Store';
 import TodoApp from './component/TodoApp';
 
 const render = () => {

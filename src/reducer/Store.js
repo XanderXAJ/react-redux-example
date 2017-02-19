@@ -1,5 +1,5 @@
 import { applyMiddleware, createStore } from 'redux';
-import todoApp from './reducer/todo';
+import todoApp from './todo';
 
 // Use redux-immutable-state-invariant to ensure that state mutations are not occurring,
 // as Redux forbids mutations.  Only use it during development though;
