@@ -1,5 +1,5 @@
-import todoApp from '../todo';
-import { todos } from '../todo';
+import todoApp from '../todoApp';
+import { todos } from '../todoApp';
 
 test('initial app state', () => {
   const expectedState = {
