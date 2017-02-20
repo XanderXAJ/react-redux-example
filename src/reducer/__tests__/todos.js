@@ -75,3 +75,28 @@ test('toggle todo complete', () => {
       todos(startState, action)
   ).toEqual(expectedState);
 });
+
+test('toggle todo incomplete', () => {
+  const startState = [
+    {
+      completed: true,
+      id: 0,
+      text: 'Todo0'
+    }
+  ];
+  const action = {
+    type: 'TOGGLE_TODO',
+    id: 0
+  };
+  const expectedState = [
+    {
+      completed: false,
+      id: 0,
+      text: 'Todo0'
+    }
+  ];
+
+  expect(
+      todos(startState, action)
+  ).toEqual(expectedState);
+});
